@@ -9,8 +9,8 @@ function Home() {
   return (
     <>
       <div
-        className="d-flex align-items-center justify-content-center mt-3 container rounded-5 shadow fade-in"
-        style={{ backgroundColor: "black", color: "white" , height:"80vh", marginTop:"12rem"}}
+        className="d-flex align-items-center justify-content-center mt-5 container rounded-5 shadow fade-in"
+        style={{ backgroundColor: "black", color: "white" , height:"80vh"}}
       >
         <Row>
           <Col lg={1} md={2} sm={1}></Col>
