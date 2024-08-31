@@ -10,7 +10,7 @@ function Home() {
     <>
       <div
         className="d-flex align-items-center justify-content-center mt-3 container rounded-5 shadow fade-in"
-        style={{ backgroundColor: "black", color: "white" , height:"80vh", marginTop:"8rem"}}
+        style={{ backgroundColor: "black", color: "white" , height:"80vh", marginTop:"12rem"}}
       >
         <Row>
           <Col lg={1} md={2} sm={1}></Col>
