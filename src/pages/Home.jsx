@@ -55,7 +55,7 @@ function Home() {
           </Col>
           <Col lg={4} md={4} sm={5}>
             <div>
-              <Image src={cover} width={"280rem"} height={"500rem"} className="img-fluid" />
+              <Image src={cover} className="img-fluid" />
             </div>
           </Col>
           <Col lg={1} md={1} sm={1}></Col>
