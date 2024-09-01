@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div className="d-flex flex-column flex-md-row justify-content-evenly mb-3 mt-5">
+      <div className="d-flex flex-column flex-md-row justify-content-evenly mb-3 mt-5 mx-4 p-2">
         <Link to="/" style={{ textDecoration: "none", color: "black" }}>
           <img
             alt=""
