@@ -9,8 +9,8 @@ function Home() {
   return (
     <>
       <div
-        className="d-flex align-items-center justify-content-center mt-5 container rounded-5 shadow fade-in"
-        style={{ backgroundColor: "black", color: "white" , height:"80vh"}}
+        className="d-flex align-items-center justify-content-center container mt-5 rounded-5 shadow fade-in"
+        style={{ backgroundColor: "black", color: "white" , height:"80vh", marginTop: "80px" }}
       >
         <Row>
           <Col lg={1} md={2} sm={1}></Col>
@@ -55,7 +55,7 @@ function Home() {
           </Col>
           <Col lg={4} md={4} sm={5}>
             <div>
-              <Image src={cover} width={"280rem"} height={"500rem"} />
+              <Image src={cover} width={"280rem"} height={"500rem"} className="img-fluid" />
             </div>
           </Col>
           <Col lg={1} md={1} sm={1}></Col>
