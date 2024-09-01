@@ -58,7 +58,7 @@ function Home() {
             </Row>
           </Col>
           <Col lg={4} md={4} sm={12} className="text-center">
-            <Image src={cover} fluid className="img-fluid rounded-5" />
+            <Image src={cover} fluid className="img-fluid custom-image"/>
           </Col>
           <Col lg={1} md={1} sm={1}></Col>
         </Row>
