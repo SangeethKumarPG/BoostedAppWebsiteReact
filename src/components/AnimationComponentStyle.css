@@ -1,0 +1,11 @@
+.custom-image {
+    width: auto;
+    height: auto;
+  }
+  @media (max-width: 576px) {
+    /* Adjust image size for screens smaller than 576px (Bootstrap 'sm' breakpoint) */
+    .custom-image {
+      width: 30%;  /* 10% of the actual width */
+      height: 40%; /* 20% of the actual height */
+    }
+  }

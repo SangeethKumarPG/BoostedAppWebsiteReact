@@ -17,10 +17,41 @@
   height: auto;
 }
 
+.testimony-card{
+  height: 13rem !important;
+}
+
+@media (max-width:1024px) {
+  .testimony-card{
+    height: 20rem !important;
+    width: 15rem !important;
+    /* margin-left:0px  !important; */
+  }
+}
+
+@media (max-width:768px) {
+  .testimony-card{
+    height: 22rem !important;
+    width: 12rem !important;
+    /* margin-left:0px  !important; */
+  }
+}
+
 @media (max-width: 576px) {
   /* Adjust image size for screens smaller than 576px (Bootstrap 'sm' breakpoint) */
   .custom-image {
     width: 30%;  /* 10% of the actual width */
     height: 40%; /* 20% of the actual height */
+  }
+  .testimony-card{
+    height: 20rem !important;
+  }
+}
+
+@media (max-width:320px) {
+  .testimony-card{
+    height: 22rem !important;
+    width: 12rem !important;
+    /* margin-left:0px  !important; */
   }
 }

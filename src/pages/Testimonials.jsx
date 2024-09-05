@@ -21,7 +21,7 @@ function Testimonials() {
         <Row>
           <Col xs={12} md={4}>
             <Card
-              className="rounded-5 shadow my-2"
+              className="rounded-5 shadow my-2 testimony-card"
               style={{ backgroundColor: "cyan" }}
             >
               <Card.Body className="p-3">
@@ -30,7 +30,7 @@ function Testimonials() {
                   would love to see my projects list on app startup and have a
                   widget for the home screen. A date picker to jump to any date
                   would also be great.
-                  <div className="mt-4">
+                  <div className="mt-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -49,7 +49,7 @@ function Testimonials() {
           </Col>
           <Col xs={12} md={4}>
             <Card
-              className="rounded-5 shadow my-2"
+              className="rounded-5 shadow my-2 testimony-card"
               style={{ backgroundColor: "lemonchiffon" }}
             >
               <Card.Body className="p-3">
@@ -58,7 +58,7 @@ function Testimonials() {
                   love some updates like checking off entire projects and more
                   features in the free version. Looking forward to seeing this
                   app achieve great heights!
-                  <div className="mt-4">
+                  <div className="mt-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -77,7 +77,7 @@ function Testimonials() {
           </Col>
           <Col xs={12} md={4}>
             <Card
-              className="rounded-5 shadow my-2"
+              className="rounded-5 shadow my-2 testimony-card"
               style={{ backgroundColor: "pink" }}
             >
               <Card.Body className="p-3">
@@ -86,7 +86,7 @@ function Testimonials() {
                   track time. It’s lightweight with no ads, and offers
                   customisable timers and useful reports. I’m grateful for the
                   lifetime premium!
-                  <div className="mt-2">
+                  <div className="mt-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"

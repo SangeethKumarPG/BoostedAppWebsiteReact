@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function Footer() {
+  const scrollToTop = ()=>{
+    window.scrollTo({top:0, behavior:"smooth"})
+  }
   return (
     <>
       <div className="d-flex flex-column flex-md-row justify-content-evenly mb-3 mt-5 mx-4 p-2">
-        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/" style={{ textDecoration: "none", color: "black" }} onClick={scrollToTop}>
           <img
             alt=""
             src="./boosted-logo.png"
@@ -14,19 +17,20 @@ function Footer() {
           />
           Boosted
         </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/" style={{ textDecoration: "none", color: "black" }} onClick={scrollToTop}>
           Home
         </Link>
-        <Link to="/features" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/features" style={{ textDecoration: "none", color: "black" }} onClick={scrollToTop}>
           Features
         </Link>
         <Link
           to="/testimonials"
           style={{ textDecoration: "none", color: "black" }}
+          onClick={scrollToTop}
         >
           Testimonials
         </Link>
-        <Link to="/pricing" style={{ textDecoration: "none", color: "black" }}>
+        <Link to="/pricing" style={{ textDecoration: "none", color: "black" }} onClick={scrollToTop}>
           Pricing
         </Link>
         <a href="https://www.instagram.com/boosted_productivity/" target="_blank" style={{textDecoration:"none", color:"black"}}>Instagram</a>

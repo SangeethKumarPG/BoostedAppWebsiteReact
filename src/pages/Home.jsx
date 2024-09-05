@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import cover from "/cover-image/coverimage-crop-new-portrait.png";
-import './CommonPageStyle.css';
+import "./CommonPageStyle.css";
 import Features from "./Features";
 import Testimonials from "./Testimonials";
 import Pricing from "./Pricing";
-
+import MockupAnimation from "../components/MockupAnimation";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 function Home() {
+  const sectionRefs = useRef([]);
+  useEffect(() => {
+    sectionRefs.current.forEach((section, index) => {
+      gsap.fromTo(
+        section,
+        {
+          opacity: 0,
+          y: 40,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <>
       <div
@@ -17,6 +44,7 @@ function Home() {
           height: "80vh",
           marginTop: "80px",
         }}
+        ref={(el) => (sectionRefs.current[0] = el)}
       >
         <Row className="align-items-center h-100">
           <Col lg={1} md={2} sm={1}></Col>
@@ -26,7 +54,8 @@ function Home() {
             </h2>
             <p>
               Not having enough time for your activities?{" "}
-              <span style={{ color: "#54ea54" }}>Boosted</span> lets you track your time and helps you work more productively.
+              <span style={{ color: "#54ea54" }}>Boosted</span> lets you track
+              your time and helps you work more productively.
             </p>
             <button className="btn btn-warning my-1 px-5 rounded-5">
               <a
@@ -58,19 +87,29 @@ function Home() {
             </Row>
           </Col>
           <Col lg={4} md={4} sm={12} className="text-center">
-            <Image src={cover} fluid className="img-fluid custom-image"/>
+            {/* <Image src={cover} fluid className="img-fluid custom-image"/> */}
+            <MockupAnimation />
           </Col>
           <Col lg={1} md={1} sm={1}></Col>
         </Row>
       </div>
 
-      <div className="container-fluid p-5">
+      <div
+        className="container-fluid p-5"
+        ref={(el) => (sectionRefs.current[1] = el)}
+      >
         <Features />
       </div>
-      <div className="container-fluid p-5">
+      <div
+        className="container-fluid p-5"
+        ref={(el) => (sectionRefs.current[2] = el)}
+      >
         <Testimonials />
       </div>
-      <div className="container-fluid p-5">
+      <div
+        className="container-fluid p-5"
+        ref={(el) => (sectionRefs.current[3] = el)}
+      >
         <Pricing />
       </div>
     </>
