@@ -11,7 +11,7 @@ function MockupAnimation() {
 
         tl.to(imageRef.current,{
             duration:2,
-            rotation:360,
+            rotationX:360,
             scale:1,
             ease:"power2.inOut"
         })
@@ -40,6 +40,7 @@ function MockupAnimation() {
     <div>
         <Image ref={imageRef} src={animationImage}
         alt='animated' className='custom-image' fluid
+        style={{transformStyle:"preserve-3d"}}
         />
     </div>
   )
